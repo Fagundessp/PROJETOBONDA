@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'bonda';
+    src: url('/FONTS/Eboracum.ttf'); 
+    font-weight: normal;  
+}
+@font-face {
+    font-family: 'bondadois';
+    src: url('/FONTS/LinguisticsPro-Regular.otf');
+    font-weight: normal;
+}
+/* Cores para o projeto #401E31/ #483C73 #F2EEB6 #F28888 #F2F2F2
+*/
+
+
+:root {
+    --cor0:#401E31;
+    --cor1:#483C73;
+    --cor2:#F2EEB6;
+    --cor3:#F28888;
+    --cor4:#F2F2F2;
+    --fonte-padrao:'bondadois', arial;
+    --fonte-destaque:'bonda', arial;
+}
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    background-color:var(--cor2);
+    font-family: var(--fonte-padrao);
+}
+
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+    text-align: center;
+    min-height: 150px;
+    
+}
+header>h1{
+    color: var(--cor4);
+    font-size: 4em;
+    padding-top: 25px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px black;
+    
+}
+header>p{
+    color: var(--cor4);
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-family: var(--fonte-destaque);
+    text-shadow: 2px 2px 2px black
+}
+nav{
+    background-color:  var(--cor0);
+    padding: 10px;
+    box-shadow: 2px 2px 1px #483C73;
+    border-radius: 2px;
+}
+nav > a{
+    color: var(--cor4);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.8s;
+}
+nav > a:hover{
+    background-color: var(--cor1);
+
+}
+
+h1,h2,h3,h4,h5{
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    font-size: 32px;
+}
+main{
+    margin: auto;
+    min-width: 300px;
+    max-width:1200px;
+    background-color:var(--cor4);
+    color: black;
+    font-family: var(--fonte-padrao);
+    padding: 20px;
+    box-shadow: 0px 0px 7px #483C73;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+main p{
+    margin: 15px 0px 15px 0px;
+    text-align:justify;
+    text-indent: 30px;
+    line-height: 1.3em;
+}
+main strong{
+   background-color: var(--cor2);
+   font-weight: bold;
+   padding: 2px;
+}                
+main img{
+    margin: auto;
+    display:block;
+    padding-top:20px;
+    font-size: 1.2em;
+    padding-bottom:20px;
+}
+aside{
+    background-color: #483C73;
+    padding: 10px;
+    border-radius: 8px;
+}
+aside h5{
+    color:var(--cor2);
+}
+aside > ol{
+   list-style-position: inside; 
+   columns: 2;
+   list-style-type: '\1F480\00A0';
+   
+}
+footer{
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px; 
+}
